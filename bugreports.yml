@@ -1,1 +1,13 @@
-
+---
+- summary: |
+    Не работает фильтр "price"
+  environment: |
+    https://hexlet-products-store.vercel.app/
+  steps-to-reproduce: |
+    - открываем страницу интернет-магазина "Hexlet Store"
+    - скролим вниз
+    - слева внизу в модальном окне "Price frome" вводим значение "500"
+  expected-result: |
+    Отображаются только товары не ниже 500$
+  actual-result: |
+    Выдаются товары стоимостью ниже 500$
