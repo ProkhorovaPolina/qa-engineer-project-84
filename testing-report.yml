@@ -1,46 +1,40 @@
 ---
 - summary: |
     Проверить фильтр "Language"
+  status: fail
+
+- summary: |
+    Проверить фильтр «Поиск»
   status: pass
 
 - summary: |
-     Проверить фильтр «Поиск»
+    Проверить фильтр "Category"
   status: pass
 
 - summary: |
-     Проверить фильтр "Category"
-  status: pass
+    Проверка возможности сделать категорию не выбранной
+  status: fail 
 
 - summary: |
     Проверить фильтр "Brand"
-  status: pass
+  status: pass 
 
 - summary: |
     Проверить фильтр "In Stock"
-  status: pass
+  status: pass 
 
 - summary: |
     Проверить фильтр "Price"
-  status: fail
+  status: fail 
 
 - summary: |
-    Просмотр карточки товара
-  status: pass
-  
-  - summary: |
-    Успешное добавление товара в корзину
-    status: pass
-  
-- summary: |
-    Удаление товара из корзины
+     Проверить работу нескольких фильтров
   status: pass
 
 - summary: |
-    Оформление заказа
-  status: fail
+     Проверить работу фильтра с негативным сценарием
+  status: pass
 
 - summary: |
-    Удаление товаров из корзины после оформления заказа
+    Работа фильтра после просмотра карточки товара
   status: fail
-    
-    
