@@ -5,7 +5,7 @@
 
 - summary: |
     Проверить фильтр «Поиск»
-  status: pass
+  status: fail
 
 - summary: |
     Проверить фильтр "Category"
@@ -81,7 +81,7 @@
 
 - summary: |
     Оформление заказа
-  status: pass
+  status: fail
 
 - summary: |
     Оплата заказа
