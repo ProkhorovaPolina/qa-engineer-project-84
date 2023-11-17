@@ -121,11 +121,7 @@
 
 - summary: |
     Адаптивность сайта
-  status: fail
-
-- summary: |
-    Адаптивность сайта
-  status: fail
+  status: pass
 
 - summary: |
     Мобильная версия
