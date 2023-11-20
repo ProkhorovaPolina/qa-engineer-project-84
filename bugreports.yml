@@ -108,21 +108,6 @@
     Окно с подтверждением не всплывает
 
 - summary: |
-    Заказ не отправляется на сервер
-  environment: |
-    Yandex Browser Версия 23.9.4.837 (64-bit)
-    OC Windows 11
-  steps-to-reproduce: |
-    - в каталоге выбираем понравившийся товар
-    - добавляем товары в корзину
-    - перейти на страницу корзины
-    - нажать на кнопку "Checkout"
-  expected-result: |
-    Заказ успешно оформлен 
-  actual-result: |
-    Данные заказа не отправились на сервер, ошибка  {status: "500", title: "failed", type: "about:blank", detail: "failed"}   
-    
-- summary: |
     Отсутствует оплата заказа
   environment: |
     Yandex Browser Версия 23.9.4.837 (64-bit)
