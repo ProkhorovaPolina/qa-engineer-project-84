@@ -1,5 +1,9 @@
 ---
 - summary: |
+   Регистрация на сайте 
+  status: fail
+
+- summary: |
     Проверить фильтр "Language"
   status: fail
 
