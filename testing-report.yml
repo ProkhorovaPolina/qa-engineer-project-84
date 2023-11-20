@@ -138,3 +138,7 @@
 - summary: |
     Проверка наличия шифрования HTTPS
   status: pass
+
+- summary: |
+    Проверка запросов в DevTools
+  status: fail
