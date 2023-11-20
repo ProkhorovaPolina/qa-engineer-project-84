@@ -1,5 +1,18 @@
 ---
 - summary: |
+    Отсутствует возможность регистрации на сайте
+  environment: |
+    Yandex Browser Версия 23.9.4.837 (64-bit)
+    OC Windows 11
+  steps-to-reproduce: |
+    - открываем главную страница интернет магазина "Hexlet Store"
+    - нажимаем "вход" или "зарегестрироваться"
+  expected-result: |
+    Открывается форма регистрации
+  actual-result: |
+    Нет возможности регистрации или входа
+
+- summary: |
     Не работает фильтр "языки"
   environment: |
     Yandex Browser Версия 23.9.4.837 (64-bit)
