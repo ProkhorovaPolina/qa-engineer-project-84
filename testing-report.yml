@@ -85,7 +85,7 @@
 
 - summary: |
     Оформление заказа
-  status: fail
+  status: pass
 
 - summary: |
     Оплата заказа
