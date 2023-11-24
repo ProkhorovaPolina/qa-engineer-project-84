@@ -8,6 +8,10 @@
   status: fail
 
 - summary: |
+    Негативная проверка строки поиска
+  status: pass
+
+- summary: |
     Проверить фильтр "Category"
   status: pass
 
@@ -46,6 +50,10 @@
 - summary: |
     Просмотр карточки товара
   status: pass 
+
+- summary: |
+    Поиск по хештегу из карточки товаров
+  status: fail   
 
 - summary: |
     Успешное добавление товара в корзину с карточки товара
