@@ -150,6 +150,19 @@ test-cases:
 bugreports:
 
   - summary: |
+      Не работает поиск с введением негативного значения в поисковой строке
+    environment: |
+      Yandex Browser Версия 23.9.4.837 (64-bit)
+      OC Windows 11
+    steps-to-reproduce: |
+      - в поисковой строке вводим значение "cat"
+      - нажимаем "enter"
+    expected-result: |
+       Воспроизводится текст "ничего не найдено"
+    actual-result: |
+       Ничего не происходит, список товаров не меняется
+
+  - summary: |
       Не работает сочетание фильтров
     environment: |
       Yandex Browser Версия 23.9.4.837 (64-bit)
