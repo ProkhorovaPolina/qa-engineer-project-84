@@ -8,8 +8,8 @@ test-cases:
     status: fail   
 
   - summary: |
-    Негативная проверка строки поиска
-  status: fail 
+      Негативная проверка строки поиска
+    status: fail 
 
   - summary: |
       Проверить фильтр "Category" 
@@ -162,7 +162,7 @@ bugreports:
     actual-result: |
        Ничего не происходит, список товаров не меняется
 
- - summary: |
+  - summary: |
       Не работает фильтр "Brаnd"
     environment: |
       Yandex Browser Версия 23.9.4.837 (64-bit)
@@ -174,19 +174,19 @@ bugreports:
     actual-result: |
        Ничего не происходит, список товаров не меняется
 
- - summary: |
-     Не работает фильтр "Price'
-   environment: |
-     Yandex Browser Версия 23.9.4.837 (64-bit)
-     OC Windows 11
-   steps-to-reproduce: |
-     - в модальном окне "Price frome" вводим значение "500"
-   expected-result: |
-      В списке товаров отображаются товары не ниже 500$
-   actual-result: |
-      Ничего не происходит, список товаров не меняется     
+  - summary: |
+      Не работает фильтр "Price'
+    environment: |
+      Yandex Browser Версия 23.9.4.837 (64-bit)
+      OC Windows 11
+    steps-to-reproduce: |
+      - в модальном окне "Price frome" вводим значение "500"
+    expected-result: |
+       В списке товаров отображаются товары не ниже 500$
+    actual-result: |
+       Ничего не происходит, список товаров не меняется     
 
- - summary: |
+  - summary: |
       Не работает сочетание фильтров
     environment: |
       Yandex Browser Версия 23.9.4.837 (64-bit)
@@ -200,7 +200,7 @@ bugreports:
     actual-result: |
        Ничего не происходит, список товаров не меняется
 
- - summary: |
+  - summary: |
       Фильтр не реагирует на некорректную фильтрацию
     environment: |
       Yandex Browser Версия 23.9.4.837 (64-bit)
