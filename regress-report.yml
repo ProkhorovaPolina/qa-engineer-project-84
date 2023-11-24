@@ -21,7 +21,7 @@ test-cases:
 
   - summary: |
       Проверить фильтр "Brand"
-    status: pass    
+    status: fail    
 
   - summary: |
       Проверить фильтр "In Stock"
@@ -159,6 +159,18 @@ bugreports:
       - нажимаем "enter"
     expected-result: |
        Воспроизводится текст "ничего не найдено"
+    actual-result: |
+       Ничего не происходит, список товаров не меняется
+
+ - summary: |
+      Не работает фильтр "Brаnd"
+    environment: |
+      Yandex Browser Версия 23.9.4.837 (64-bit)
+      OC Windows 11
+    steps-to-reproduce: |
+      - в модальном окне фильтра "отмечаем" бренд "L'Oreal Paris"
+    expected-result: |
+       Отображаются товары только выбранного бренда
     actual-result: |
        Ничего не происходит, список товаров не меняется
 
