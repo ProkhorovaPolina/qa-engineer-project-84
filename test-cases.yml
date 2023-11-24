@@ -6,7 +6,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store" 
   test-data: |
-    empty  
+    https://hexlet-products-store.vercel.app/  
   steps:
     - открываем список языков
     - выбираем язык "Русский"
@@ -20,13 +20,27 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - в поисковой строке вводим значение "watch"
     - нажимае "enter"
   expected-result: |
      В списке товаров отображаются только товары, которые содержат слово "watch" в названии или кратком описании
-    
+
+- summary: |
+    Негативная проверка строки поиска
+  requirement: |
+    При вводе негативного значения выдается результат "ничего не найдено"
+  prerequisites: |
+    Открыта главная страница интернет магазина "Hexlet Store"
+  test-data: |
+    https://hexlet-products-store.vercel.app/     
+  steps:
+    - в поисковой строке вводим значение "cat"
+    - нажимаем "enter"
+  expected-result: |
+     Отображается текст "ничего не найдено"
+       
 - summary: |
     Проверить фильтр "Category"
   requirement: |
@@ -34,7 +48,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - открываем список категорий
     - выбираем категорию "laptops"
@@ -62,7 +76,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - слева в в модальном окне фильтра "отмечаем" бренд "Huawei"
   expected-result: |
@@ -75,7 +89,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - в модальном окне фильтра "отмечаем" галочкой "In Stock"
   expected-result: |
@@ -88,7 +102,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - в модальном окне "Price frome" вводим значение "500"
   expected-result: |
@@ -101,7 +115,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - в поисковой строке вводим значение "Perfume"
     - выбираем категорию "fragrances"
@@ -116,7 +130,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - в поисковой строке вводим значение "Perfume"
     - выбираем категорию "laptop"
@@ -130,7 +144,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - в поисковой строке вводим значение "phone" 
     - выбираем бренд "iPhone"
@@ -147,7 +161,7 @@
   prerequisites: |
      Открыта страница интернет магазина "Hexlet Store"
   test-data: |
-    empty      
+    https://hexlet-products-store.vercel.app/      
   steps:
     - на странице магазина просматриваем каталог товаров
   expected-result: |
@@ -160,13 +174,28 @@
   prerequisites: |
      Открыта страница интернет магазина "Hexlet Store"
   test-data: |
-    empty      
+    https://hexlet-products-store.vercel.app/      
   steps:
     - на странице магазина выбираем понравившийся товар
     - нажимаем на наименование или фото товара
   expected-result: |
     Открывается подробная информация о выбранном товаре
-    
+
+- summary: |
+    Поиск по хештегу из карточки товаров
+  requirement: |
+    При нажатии на хештег в карточке товаров открываются товары,соответствующие критерию хештега
+  prerequisites: |
+     Открыта страница интернет магазина "Hexlet Store"
+  test-data: |
+    https://hexlet-products-store.vercel.app/     
+  steps:
+    - на странице магазина выбираем понравившийся товар
+    - открываем карточку товара, нажимая на наименование или фото товара
+    - нажимаем на хештег 
+  expected-result: |
+    Открывается список товаров, в названии или кратком описании которых присутствуют слова хештега
+        
 - summary: |
     Успешное добавление товара в корзину с карточки товара
   requirement: |
@@ -174,7 +203,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - перейти на страницу с иформацией о товаре 
     - нажать кнопку "Add to cart"
@@ -189,7 +218,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - выбираем понравившийся товар
     - нажать кнопку "Add to cart"
@@ -204,7 +233,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - перейти на страницу с иформацией о товаре 
     - нажать "Add to cart"
@@ -220,7 +249,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - выбираем понравившийся товар 
     - нажать "Add to cart"
@@ -237,7 +266,7 @@
   prerequisites: |
     Открыта главная страница интернет-магазина
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - открываем корзину нажимая "Cart" 
     - нажимаем "Continue shopping" 
@@ -279,7 +308,7 @@
   prerequisites: |
     Открыта страница интернет магазина "Hexlet Store"  
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - выбрать понравившийся товар
     - нажать на кнопку "Add to cart"
@@ -382,7 +411,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - вверху страницы нажимаем "next"
   expected-result: |
@@ -395,7 +424,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - вверху страницы нажимаем "previous"
   expected-result: |
@@ -408,7 +437,7 @@
   prerequisites: |
     Открыта главная страница интернет магазина "Hexlet Store"
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - нажимаем "next" 5 раз
     - нажимаем "previous" 5 раз
@@ -422,7 +451,7 @@
   prerequisites: |
     В браузерах Yandex,Chrome,Firefox открыта главная страница интернет магазина Hexlet Store
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - сравнимаем внешний фид сайта
     - переключаем сайт на русский язык
@@ -442,7 +471,7 @@
   prerequisites: |
     Открыт DevTools на главной странице магазина
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - просматриваем несколько вариаций разрешения 1280х800, 1024х1366, 1000х700
     - просматриваем каталог товаров
@@ -461,7 +490,7 @@
   requirement: |
     При открытии мобильной версии магазин исправно работает
   prerequisites: |
-    Открыт DevTools на главной странице магазина
+    Открыт DevTools на главной странице магазина https://hexlet-products-store.vercel.app/
   test-data: |
      iPhone SE 375x667
   steps:
@@ -483,7 +512,7 @@
   prerequisites: |
     Открыта главная страница интернет-магазина
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - открываем DevTools, вкладка Network
     - меняем "No throttling" на "Slow 3G"
@@ -497,7 +526,7 @@
   prerequisites: |
     Открыта главная страница интернет-магазина
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - Проверяем в поле адресной строки браузера протокол передачи данных
   expected-result: |
@@ -510,7 +539,7 @@
   prerequisites: |
     Открыта главная страница интернет-магазина
   test-data: |
-    empty     
+    https://hexlet-products-store.vercel.app/     
   steps:
     - открываем DevTools
     - открываем вкладку "Network"
