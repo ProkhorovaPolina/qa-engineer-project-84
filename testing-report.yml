@@ -40,12 +40,12 @@
   status: fail
 
 - summary: |
-    Просмотр карточки товара
-  status: pass
-
-- summary: |
     Просмотр каталога товаров
   status: pass  
+
+- summary: |
+    Просмотр карточки товара
+  status: pass 
 
 - summary: |
     Успешное добавление товара в корзину с карточки товара
