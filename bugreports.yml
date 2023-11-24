@@ -38,7 +38,7 @@
      Выдает "Nothing found!"
 
 - summary: |
-    Нет возможности снят выбор категории
+    Нет возможности снять выбор категории
   environment: |
     Yandex Browser Версия 23.9.4.837 (64-bit)
     OC Windows 11
